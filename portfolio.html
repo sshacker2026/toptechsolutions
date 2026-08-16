@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem('tts-theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Top Tech Solutions</title>
+<meta name="description" content="A selection of web, mobile, cloud and AI products designed and built by Top Tech Solutions.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#2454FF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+</head>
+<body>
+<a href="#main" class="skip-link" data-en="Skip to content" data-hi="सीधे कंटेंट पर जाएं">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <div class="logo">
+      <button type="button" class="logo-mark" id="logoZoom" aria-haspopup="dialog" aria-label="View the full logo" data-en-aria="View the full logo" data-hi-aria="पूरा लोगो देखें">
+        <img src="assets/img/logo-emblem.png" alt="" width="40" height="40" decoding="async">
+      </button>
+      <a href="index.html" class="logo-text" data-en="Top Tech Solutions" data-hi="Top Tech Solutions">Top Tech Solutions</a>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link" data-en="Home" data-hi="होम">Home</a></li>
+        <li><a href="services.html" class="nav-link" data-en="Services" data-hi="सर्विसेज़">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link active" data-en="Portfolio" data-hi="पोर्टफोलियो">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+        <li><a href="contact.html" class="nav-link" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+      </ul>
+      <div class="nav-cta-mobile">
+        <a href="contact.html" class="btn btn-primary btn-block" data-en="Start a Project" data-hi="प्रोजेक्ट शुरू करें">Start a Project</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language / भाषा बदलें">
+        <span class="lang-option lang-en active" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-option lang-hi" data-lang="hi">HI</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.4M12 19v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19 12h2.4M4.9 19l1.7-1.7M17.4 6.6l1.7-1.7"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"></path></svg>
+      </button>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta" data-en="Start a Project" data-hi="प्रोजेक्ट शुरू करें">Start a Project</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ LOGO LIGHTBOX ============ -->
+<div class="logo-modal" id="logoModal" role="dialog" aria-modal="true" aria-labelledby="logoModalTitle" hidden>
+  <div class="logo-modal-inner">
+    <h2 class="sr-only" id="logoModalTitle" data-en="Top Tech Solutions logo" data-hi="Top Tech Solutions लोगो">Top Tech Solutions logo</h2>
+    <button type="button" class="logo-modal-close" id="logoModalClose" aria-label="Close" data-en-aria="Close" data-hi-aria="बंद करें">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+    <img src="assets/img/logo-master-yellow.png" alt="Top Tech Solutions full logo" width="1254" height="1254" decoding="async">
+  </div>
+</div>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb reveal">
+        <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+        <span>/</span>
+        <span data-en="Portfolio" data-hi="पोर्टफोलियो">Portfolio</span>
+      </div>
+      <span class="eyebrow reveal" data-en="Our Work" data-hi="हमारा काम">Our Work</span>
+      <h1 class="reveal" data-en="Products we've designed and built" data-hi="प्रोडक्ट्स जो हमने डिज़ाइन और तैयार किए">Products we've designed and built</h1>
+      <p class="lead reveal" data-en="A selection of projects across fintech, healthcare, retail, logistics and more." data-hi="फिनटेक, हेल्थकेयर, रिटेल, लॉजिस्टिक्स और कई और क्षेत्रों में किए गए प्रोजेक्ट्स की एक झलक।">A selection of projects across fintech, healthcare, retail, logistics and more.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all" data-en="All" data-hi="सभी">All</button>
+        <button class="filter-tab" data-filter="web" data-en="Web" data-hi="वेब">Web</button>
+        <button class="filter-tab" data-filter="mobile" data-en="Mobile" data-hi="मोबाइल">Mobile</button>
+        <button class="filter-tab" data-filter="cloud" data-en="Cloud" data-hi="क्लाउड">Cloud</button>
+        <button class="filter-tab" data-filter="ai" data-en="AI" data-hi="AI">AI</button>
+        <button class="filter-tab" data-filter="enterprise" data-en="Enterprise" data-hi="एंटरप्राइज़">Enterprise</button>
+      </div>
+
+      <div class="grid grid-3">
+
+        <div class="project-item reveal" data-category="web" id="finflow">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-line w40"></div><div class="mock-block"></div><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div><div class="mock-line w80"></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Fintech" data-hi="फिनटेक">Fintech</span><span class="tag-pill" data-en="Web + Mobile" data-hi="वेब + मोबाइल">Web + Mobile</span></div>
+              <h3>FinFlow</h3>
+              <p data-en="A digital banking platform handling millions of secure transactions monthly, with real-time fraud checks." data-hi="एक डिजिटल बैंकिंग प्लेटफॉर्म, जो हर महीने लाखों सुरक्षित लेन-देन संभालता है और रियल-टाइम में फ्रॉड चेक करता है।">A digital banking platform handling millions of secure transactions monthly, with real-time fraud checks.</p>
+              <span class="card-link" style="cursor:default"><span data-en="8 months · Web, iOS, Android" data-hi="8 महीने · वेब, iOS, Android">8 months · Web, iOS, Android</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="enterprise" id="meditrack">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-line w60"></div><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div><div class="mock-block"></div><div class="mock-line w40"></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Healthcare" data-hi="हेल्थकेयर">Healthcare</span><span class="tag-pill" data-en="Enterprise" data-hi="एंटरप्राइज़">Enterprise</span></div>
+              <h3>MediTrack</h3>
+              <p data-en="A hospital management system connecting patient records, staff scheduling and billing in one place." data-hi="एक हॉस्पिटल मैनेजमेंट सिस्टम, जो मरीज़ों के रिकॉर्ड, स्टाफ शेड्यूल और बिलिंग को एक जगह जोड़ता है।">A hospital management system connecting patient records, staff scheduling and billing in one place.</p>
+              <span class="card-link" style="cursor:default"><span data-en="6 months · Web platform" data-hi="6 महीने · वेब प्लेटफॉर्म">6 months · Web platform</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="web" id="shopsphere">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-line w40"></div><div class="mock-line w80"></div><div class="mock-block"></div><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Retail" data-hi="रिटेल">Retail</span><span class="tag-pill" data-en="Web" data-hi="वेब">Web</span></div>
+              <h3>ShopSphere</h3>
+              <p data-en="A headless e-commerce platform built for speed, with a storefront that loads in under a second." data-hi="एक हेडलेस ई-कॉमर्स प्लेटफॉर्म, जिसका स्टोर एक सेकंड से भी कम में लोड हो जाता है।">A headless e-commerce platform built for speed, with a storefront that loads in under a second.</p>
+              <span class="card-link" style="cursor:default"><span data-en="10 weeks · Web platform" data-hi="10 हफ्ते · वेब प्लेटफॉर्म">10 weeks · Web platform</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="cloud" id="cargolink">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div><div class="mock-line w60"></div><div class="mock-block"></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Logistics" data-hi="लॉजिस्टिक्स">Logistics</span><span class="tag-pill" data-en="Cloud" data-hi="क्लाउड">Cloud</span></div>
+              <h3>CargoLink</h3>
+              <p data-en="A real-time fleet tracking system built on a Kubernetes backbone, monitoring thousands of vehicles." data-hi="Kubernetes पर बना एक रियल-टाइम फ्लीट ट्रैकिंग सिस्टम, जो हज़ारों गाड़ियों को ट्रैक करता है।">A real-time fleet tracking system built on a Kubernetes backbone, monitoring thousands of vehicles.</p>
+              <span class="card-link" style="cursor:default"><span data-en="5 months · Cloud platform" data-hi="5 महीने · क्लाउड प्लेटफॉर्म">5 months · Cloud platform</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="mobile" id="learnloop">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-block"></div><div class="mock-line w40"></div><div class="mock-line w60"></div><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Ed-tech" data-hi="एड-टेक">Ed-tech</span><span class="tag-pill" data-en="Web + Mobile" data-hi="वेब + मोबाइल">Web + Mobile</span></div>
+              <h3>LearnLoop</h3>
+              <p data-en="A learning platform with offline lessons, quizzes and progress tracking for students." data-hi="एक लर्निंग प्लेटफॉर्म, जिसमें ऑफलाइन पाठ, क्विज़ और छात्रों की प्रगति ट्रैक करने की सुविधा है।">A learning platform with offline lessons, quizzes and progress tracking for students.</p>
+              <span class="card-link" style="cursor:default"><span data-en="7 months · Web, iOS, Android" data-hi="7 महीने · वेब, iOS, Android">7 months · Web, iOS, Android</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="web" id="propvista">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-line w80"></div><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div><div class="mock-block"></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Real Estate" data-hi="रियल एस्टेट">Real Estate</span><span class="tag-pill" data-en="Web" data-hi="वेब">Web</span></div>
+              <h3>PropVista</h3>
+              <p data-en="A property marketplace with map-based search, virtual tours and lead management for agents." data-hi="एक प्रॉपर्टी मार्केटप्लेस, जिसमें मैप पर सर्च, वर्चुअल टूर और एजेंट्स के लिए लीड मैनेजमेंट है।">A property marketplace with map-based search, virtual tours and lead management for agents.</p>
+              <span class="card-link" style="cursor:default"><span data-en="4 months · Web platform" data-hi="4 महीने · वेब प्लेटफॉर्म">4 months · Web platform</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="ai" id="nutriplan">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-line w40"></div><div class="mock-block"></div><div class="mock-line w60"></div><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="AI" data-hi="AI">AI</span><span class="tag-pill" data-en="Mobile" data-hi="मोबाइल">Mobile</span></div>
+              <h3>NutriPlan</h3>
+              <p data-en="An AI-powered diet and fitness coach that adapts recommendations to each user's progress." data-hi="एक AI डाइट और फिटनेस कोच ऐप, जो हर यूज़र की प्रगति के हिसाब से सुझाव देता है।">An AI-powered diet and fitness coach that adapts recommendations to each user's progress.</p>
+              <span class="card-link" style="cursor:default"><span data-en="5 months · iOS, Android" data-hi="5 महीने · iOS, Android">5 months · iOS, Android</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-category="enterprise" id="insureease">
+          <div class="card project-card">
+            <div class="project-mock">
+              <div class="mock-window"><div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body"><div class="mock-grid"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div><div class="mock-block"></div><div class="mock-line w40"></div><div class="mock-line w80"></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span class="tag-pill" data-en="Insurance" data-hi="इंश्योरेंस">Insurance</span><span class="tag-pill" data-en="Enterprise" data-hi="एंटरप्राइज़">Enterprise</span></div>
+              <h3>InsureEase</h3>
+              <p data-en="A claims automation portal that cut average processing time from 9 days to under 2." data-hi="एक क्लेम ऑटोमेशन पोर्टल, जिसने प्रोसेसिंग का औसत समय 9 दिन से घटाकर 2 दिन से भी कम कर दिया।">A claims automation portal that cut average processing time from 9 days to under 2.</p>
+              <span class="card-link" style="cursor:default"><span data-en="6 months · Web platform" data-hi="6 महीने · वेब प्लेटफॉर्म">6 months · Web platform</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="stat-strip reveal">
+        <div><span class="num">150+</span><span class="label" data-en="Projects delivered" data-hi="पूरे किए प्रोजेक्ट">Projects delivered</span></div>
+        <div><span class="num">40+</span><span class="label" data-en="Engineers &amp; designers" data-hi="इंजीनियर और डिज़ाइनर">Engineers &amp; designers</span></div>
+        <div><span class="num">18</span><span class="label" data-en="Countries served" data-hi="देशों में सेवा">Countries served</span></div>
+        <div><span class="num">98%</span><span class="label" data-en="Client retention" data-hi="क्लाइंट रिटेंशन">Client retention</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2 data-en="Want to see your product here next?" data-hi="अगली बारी आपके प्रोडक्ट की हो?">Want to see your product here next?</h2>
+        <p data-en="Let's talk through what you're building and how we can help." data-hi="चलिए बात करते हैं कि आप क्या बना रहे हैं और हम कैसे मदद कर सकते हैं।">Let's talk through what you're building and how we can help.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-en="Start Your Project" data-hi="प्रोजेक्ट शुरू करें">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><img src="assets/img/logo-emblem.png" alt="" width="40" height="40" decoding="async"></span>
+          <span class="logo-text" data-en="Top Tech Solutions" data-hi="Top Tech Solutions">Top Tech Solutions</span>
+        </a>
+        <p data-en="A software engineering partner for teams building web, mobile, cloud and AI products that need to last." data-hi="वेब, मोबाइल, क्लाउड और AI प्रोडक्ट बनाने वाली टीमों के लिए एक भरोसेमंद सॉफ्टवेयर पार्टनर।">A software engineering partner for teams building web, mobile, cloud and AI products that need to last.</p>
+        <div class="social-row">
+          <a href="#" aria-label="LinkedIn" data-en-aria="LinkedIn" data-hi-aria="लिंक्डइन"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M9 11v5M9 8v.01M12 16v-3.2a1.8 1.8 0 0 1 3.6 0V16"></path></svg></a>
+          <a href="#" aria-label="X (Twitter)" data-en-aria="X (Twitter)" data-hi-aria="X (ट्विटर)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5l14 14M19 5L5 19"></path></svg></a>
+          <a href="#" aria-label="GitHub" data-en-aria="GitHub" data-hi-aria="गिटहब"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.4c0-1 .3-1.6.7-2-2.6-.3-5.3-1.3-5.3-5.7a4.5 4.5 0 0 1 1.2-3.1 4.2 4.2 0 0 1 .1-3s1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C23.3 3.5 24.3 3.8 24.3 3.8"></path></svg></a>
+          <a href="#" aria-label="Dribbble" data-en-aria="Dribbble" data-hi-aria="ड्रिबल"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M4 10c4 1.2 12 1.2 16.5.3M6 19c2-4 4-9.5 4-15.5M20 17.5c-2.6-2-6.4-3-11-2.2"></path></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <div class="footer-col-title" data-en="Company" data-hi="कंपनी">Company</div>
+          <div class="footer-links">
+            <a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a>
+            <a href="portfolio.html" data-en="Portfolio" data-hi="पोर्टफोलियो">Portfolio</a>
+            <a href="contact.html" data-en="Careers" data-hi="करियर">Careers</a>
+            <a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-en="Services" data-hi="सर्विसेज़">Services</div>
+          <div class="footer-links">
+            <a href="services.html#web" data-en="Web Development" data-hi="वेब डेवलपमेंट">Web Development</a>
+            <a href="services.html#mobile" data-en="Mobile Apps" data-hi="मोबाइल ऐप्स">Mobile Apps</a>
+            <a href="services.html#cloud" data-en="Cloud &amp; DevOps" data-hi="क्लाउड और डेवऑप्स">Cloud &amp; DevOps</a>
+            <a href="services.html#ai" data-en="AI &amp; Data" data-hi="AI और डेटा">AI &amp; Data</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-en="Resources" data-hi="संसाधन">Resources</div>
+          <div class="footer-links">
+            <a href="index.html#faq" data-en="FAQ" data-hi="सवाल-जवाब">FAQ</a>
+            <a href="portfolio.html" data-en="Case Studies" data-hi="केस स्टडी">Case Studies</a>
+            <a href="index.html#process" data-en="Our Process" data-hi="हमारा तरीका">Our Process</a>
+            <a href="contact.html" data-en="Get a Quote" data-hi="कोटेशन लें">Get a Quote</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-en="Stay in the loop" data-hi="जुड़े रहें">Stay in the loop</div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+            <span>contact.toptechsolutions@gmail.com</span>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="footerEmail" data-en="Email address" data-hi="ईमेल पता">Email address</label>
+            <input id="footerEmail" type="email" required data-en-placeholder="Your email" data-hi-placeholder="आपका ईमेल" placeholder="Your email">
+            <button type="submit" class="btn btn-primary btn-sm" data-en="Join" data-hi="जुड़ें">Join</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="current-year">2026</span> <span data-en="Top Tech Solutions. All rights reserved." data-hi="Top Tech Solutions। सभी अधिकार सुरक्षित।">Top Tech Solutions. All rights reserved.</span></span>
+      <div class="footer-bottom-links">
+        <a href="#" data-en="Privacy Policy" data-hi="प्राइवेसी पॉलिसी">Privacy Policy</a>
+        <a href="#" data-en="Terms of Service" data-hi="सेवा शर्तें">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=3"></script>
+</body>
+</html>
