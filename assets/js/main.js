@@ -233,6 +233,17 @@
   var form = document.getElementById("contactForm");
   if (form) {
     var successBox = document.getElementById("formSuccess");
+    var errorBox = document.getElementById("formError");
+    var submitBtn = form.querySelector("button[type='submit']");
+
+    function showBanner(box) {
+      if (!box) return;
+      if (successBox) successBox.classList.remove("show");
+      if (errorBox) errorBox.classList.remove("show");
+      box.classList.add("show");
+      box.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var valid = true;
@@ -245,14 +256,42 @@
         if (wrap) wrap.classList.toggle("error", !ok);
         if (!ok) valid = false;
       });
-      if (valid) {
-        form.reset();
-        if (successBox) {
-          successBox.classList.add("show");
-          successBox.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
-          setTimeout(function () { successBox.classList.remove("show"); }, 6000);
-        }
+      if (!valid) return;
+
+      // The success banner must only appear once Web3Forms confirms delivery —
+      // showing it optimistically would tell people we received an enquiry we
+      // never actually got.
+      var isHindi = root.getAttribute("lang") === "hi";
+      var restoreLabel = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.setAttribute("aria-busy", "true");
+        submitBtn.textContent = isHindi ? "भेजा जा रहा है…" : "Sending…";
       }
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: new FormData(form)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data && data.success) {
+            form.reset();
+            showBanner(successBox);
+            setTimeout(function () { if (successBox) successBox.classList.remove("show"); }, 8000);
+          } else {
+            showBanner(errorBox);
+          }
+        })
+        .catch(function () { showBanner(errorBox); })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.removeAttribute("aria-busy");
+            // Re-read the label from data-* so a language switch mid-send still
+            // restores the right text.
+            var attr = root.getAttribute("lang") === "hi" ? "data-hi" : "data-en";
+            submitBtn.textContent = submitBtn.getAttribute(attr) || restoreLabel;
+          }
+        });
     });
   }
 

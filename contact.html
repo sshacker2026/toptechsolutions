@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="stylesheet" href="assets/css/styles.css?v=4">
 </head>
 <body>
 <a href="#main" class="skip-link" data-en="Skip to content" data-hi="सीधे कंटेंट पर जाएं">Skip to content</a>
@@ -135,7 +135,20 @@
           <span data-en="Thanks! Your message has been sent — we'll be in touch soon." data-hi="धन्यवाद! आपका मैसेज भेज दिया गया है — हम जल्द ही संपर्क करेंगे।">Thanks! Your message has been sent — we'll be in touch soon.</span>
         </div>
 
+        <div class="form-error" id="formError">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5M12 16.2v.01"></path></svg>
+          <span data-en="Sorry — the message couldn't be sent. Please email us directly at shivamsonkar.toptechsolutions@gmail.com" data-hi="माफ़ करें — मैसेज नहीं भेजा जा सका। कृपया सीधे shivamsonkar.toptechsolutions@gmail.com पर ईमेल करें।">Sorry — the message couldn't be sent. Please email us directly at shivamsonkar.toptechsolutions@gmail.com</span>
+        </div>
+
         <form id="contactForm" novalidate>
+          <!-- Web3Forms delivers submissions by email; no backend needed. The access
+               key is public by design (it only permits posting to this one inbox). -->
+          <input type="hidden" name="access_key" value="REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New enquiry from toptechsolutions.in">
+          <input type="hidden" name="from_name" value="Top Tech Solutions website">
+          <!-- Honeypot: bots fill this, humans never see it. -->
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+
           <div class="form-grid">
             <div class="form-row-2">
               <div class="field">
@@ -304,6 +317,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
